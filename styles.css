@@ -11,8 +11,10 @@ body {
 .flexWrapper {
     display: flex;
     width: 100vw;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     /* margin: 50px 0 0 40px; */
 }
@@ -20,9 +22,15 @@ body {
 .flexBoxRow {
     display: flex;
     position: relative;
-    flex-direction: row;
-    /* justify-content: left; */
-    margin: 100px 20px;
+
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.flexBoxSmallRow {
+    display: flex;
+    position: relative;
+    justify-content: left;
 }
 
 .flexBoxColumn {
@@ -33,12 +41,19 @@ body {
 }
 
 .searchClass {
-    width: 295px;
+    width: 279px;
     height: 50px;
     border: 1px solid #D9D9D9;
     padding-left: 12px;
-    /* box-sizing: border-box; */
     border-radius: 6px;
+}
+
+.input:focus {
+    border: 1px solid #FF5555;
+}
+
+.searchClass:disabled {
+    background-color: #F9F9F9;
 }
 
 .searchImg {
@@ -46,13 +61,22 @@ body {
 }
 
 .searchBut {
-    background-color: #FF5555;;
-    margin-left: 20px;
+    background-color: #FF5555;
+    margin-left: 12px;
     border-radius: 6px;
     border-width: 0;
     width: 50px;
     height: 50px;
 }
+
+.searchBut:hover {
+    background-color: rgba(255, 85, 85, 0.5);
+}
+
+.searchBut:disabled {
+    background-color: #D9D9D9
+}
+
 
 .wrapper {
     display: grid;
@@ -64,7 +88,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 357px;
+    width: 331px;
     height: 80px;
     border: 1px solid #D9D9D9;
     border-radius: 6px;
@@ -85,15 +109,28 @@ body {
     margin-bottom: 4px;
 }
 
-.descRep {
+.hrefRep {
     color:#7E7E7E;
-
+    margin-bottom: 4px;
 }
 
-/* .HeaderClass {
-    font-weight: bold;
-    font-size: 40px;
-} */
+.hrefRep:hover {
+    color: #208FBF;
+}
+
+.descripClass {
+    color: #7E7E7E;
+    size: 14px;
+}
+
+
+.statNumClass {
+    margin-left: 4px;
+}
+
+.dateClass {
+    margin-left: 20px;
+}
 
 
 @font-face {
